@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Downloads Manager by ngativ",
+  "version": "1.0.0",
+  "description": "Route Chrome downloads into smart, user-defined folders based on their source website.",
+  "minimum_chrome_version": "116",
+  "permissions": ["downloads", "storage", "tabs"],
+  "background": { "service_worker": "src/background/service-worker.js", "type": "module" },
+  "action": {
+    "default_title": "Smart Downloads Manager",
+    "default_popup": "popup/popup.html"
+  },
+  "options_ui": { "page": "options/options.html", "open_in_tab": true }
+}
